@@ -1,5 +1,5 @@
 ## VariantMap - Interactive heatmap for multi-sample structural variant analysis
-[![Build Status](https://travis-ci.org/cytham/variantmap.svg?branch=master)](https://travis-ci.org/cytham/variantmap)
+[![Build Status](https://travis-ci.com/cytham/variantmap.svg?branch=master)](https://travis-ci.com/cytham/variantmap)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/variantmap)](https://pypi.org/project/variantmap/)
 [![PyPI versions](https://img.shields.io/pypi/v/variantmap)](https://pypi.org/project/variantmap/)
 [![Conda](https://img.shields.io/conda/v/bioconda/variantmap)](https://anaconda.org/bioconda/variantmap)
