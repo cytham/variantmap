@@ -7,4 +7,4 @@ install:
   - pip install .
 
 script:
-  - python variantmap-app.py
+  - python -m pytest -v

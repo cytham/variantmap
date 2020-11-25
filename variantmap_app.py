@@ -805,6 +805,10 @@ def callbacks(app):
         return child_info
 
 
+def test():
+    return "PASS"
+
+
 # only declare app/server if the file is being run directly
 if 'DEMO_STANDALONE' not in os.environ:
     app = run_standalone_app(layout, callbacks, header_colors, __file__)

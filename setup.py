@@ -10,7 +10,7 @@ exec(open("version.py").read())
 setup(
     name='variantmap',
     version=__version__,
-    scripts=['variantmap-app.py'],
+    scripts=['variantmap_app.py'],
     url='https://github.com/cytham/variantmap',
     download_url='https://github.com/cytham/variantmap/releases',
     license='gpl-3.0',
