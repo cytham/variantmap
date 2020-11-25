@@ -1,5 +1,5 @@
 import unittest
-import variantmap_app
+from .variantmap_app import test
 
 def test_vm():
-    assert variantmap_app.test() == "PASS"
+    assert test() == "PASS"
