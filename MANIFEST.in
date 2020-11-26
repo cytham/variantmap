@@ -1,2 +1,3 @@
 include *.txt
-include *.py
+recursive-include variantmap/assets *
+recursive-include variantmap/data *.h5

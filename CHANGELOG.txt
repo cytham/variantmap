@@ -4,6 +4,11 @@ VariantMap Changelog
 Release Summary:
 
 
+Version 1.0.2 - Nov 26, 2020
+    * Install app script in PATH
+    * Attempt to fix assets and data folder installation
+
+
 Version 1.0.1 - Nov 26, 2020
     * Packaged variantmap as a python package
 

@@ -14,6 +14,7 @@ setup(
     package_data={'variantmap.assets': ['*'],
                   'variantmap.data': ['*.h5']},
     include_package_data=True,
+    scripts=['variantmap_app.py'],
     url='https://github.com/cytham/variantmap',
     download_url='https://github.com/cytham/variantmap/releases',
     license='gpl-3.0',
