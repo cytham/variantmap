@@ -3,7 +3,7 @@ import variantmap_app
 
 
 def test_vm():
-    assert variantmap.test() == "PASS"
+    assert variantmap.variantmap.test() == "PASS"
 
 
 def test_vma():
