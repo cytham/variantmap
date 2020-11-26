@@ -16,25 +16,21 @@ import io
 
 import math
 import pandas as pd
-# import dash_bio
 import dash_html_components as html
 import dash_core_components as dcc
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 
-
-try:
-    from layout_helper import run_standalone_app
-except ModuleNotFoundError:
-    from .layout_helper import run_standalone_app
-
 import variantmap
+from variantmap.variantmap import VariantMap
+from variantmap.layout_helper import run_standalone_app
 
-DATAPATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
+
+DATAPATH = os.path.join(os.path.dirname(variantmap.__file__), 'data')
 
 
 def description():
-    return 'Variant Map visualizes cohort structural variants in a heatmap.'
+    return 'VariantMap visualizes cohort structural variants in a heatmap.'
 
 
 def header_colors():
@@ -734,7 +730,7 @@ def callbacks(app):
 
         # Create figure
         if custom_config is None:  # If custom_config settings are not provided
-            fig = variantmap.VariantMap(df, batch_no=selected_batch, sample_order=sample_sortlist, sample_names=names_dict)
+            fig = VariantMap(df, batch_no=selected_batch, sample_order=sample_sortlist, sample_names=names_dict)
 
         else:
             # Slicing dataframe by variant indexes
@@ -756,7 +752,7 @@ def callbacks(app):
             annotation['Gene_feature'] = custom_config['Gene_feature']
 
             # Assign VariantMap plot to fig
-            fig = variantmap.VariantMap(
+            fig = VariantMap(
                 df,
                 entries_per_batch=custom_config['entries'],
                 batch_no=selected_batch,

@@ -1,16 +1,19 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 import os
 
 current_dir = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(current_dir, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-exec(open("version.py").read())
+exec(open("variantmap/version.py").read())
 
 setup(
     name='variantmap',
     version=__version__,
-    scripts=['variantmap_app.py'],
+    packages=find_packages(),
+    package_data={'variantmap.assets': ['*'],
+                  'variantmap.data': ['*.h5']},
+    include_package_data=True,
     url='https://github.com/cytham/variantmap',
     download_url='https://github.com/cytham/variantmap/releases',
     license='gpl-3.0',

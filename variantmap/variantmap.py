@@ -367,3 +367,7 @@ def discrete_colorscale(markers, colors):
     for k in enumerate(colors):
         dcolorscale.extend([[norm_mark[k[0]], colors[k[0]]], [norm_mark[k[0] + 1], colors[k[0]]]])
     return dcolorscale
+
+
+def test():
+    return "PASS"

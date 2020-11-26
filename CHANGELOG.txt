@@ -4,5 +4,9 @@ VariantMap Changelog
 Release Summary:
 
 
+Version 1.0.1 - Nov 26, 2020
+    * Packaged variantmap as a python package
+
+
 Version 1.0.0 - Nov 25, 2020
     * First release

@@ -7,7 +7,7 @@
 [![PyPI license](https://img.shields.io/pypi/l/variantmap)](./LICENSE.txt)
 
 <p align="center">
-    <img width="565" height="375" src="assets/demo-image.png" alt="variantmap-demo-image">
+    <img width="565" height="375" src="variantmap/assets/demo-image.png" alt="variantmap-demo-image">
 </p>
 
 VariantMap is a genomic structural variant (SV) visualization technique that displays variants across multiple samples in
