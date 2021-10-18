@@ -8,8 +8,10 @@ import base64
 import os
 
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+# import dash_core_components as dcc
+from dash import dcc
+# import dash_html_components as html
+from dash import html
 
 
 ASSETSPATH = os.path.join(os.path.dirname(__file__), 'assets')
