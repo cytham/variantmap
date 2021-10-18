@@ -18,8 +18,10 @@ import io
 
 import math
 import pandas as pd
-import dash_html_components as html
-import dash_core_components as dcc
+from dash import html
+# import dash_html_components as html
+from dash import dcc
+# import dash_core_components as dcc
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 
